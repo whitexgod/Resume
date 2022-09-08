@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.project-body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('background-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4rem;
+}
+.projects-heading{
+    text-align: center;
+    font-size: 4.5rem;
+    color: #298e46;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Project-card{
+    cursor: pointer;
+    margin: 2rem;
+    padding: 1rem;
+    width: 25rem;
+    height: 25rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10%;
+    background: #eee;
+    box-shadow: 0 8px 8px -4px lightblue;
+    transition: all .3s ease-in-out;
+}
+.Project-card:hover{
+    border: 2.5px solid #00FF7F;
+    box-shadow: 0 0 3rem #00FF7F;
+    transform: scale(1.03);
+}
+.card-img-top{
+    width: 12rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.card-title{
+    color: #2ea44f;
+    font-size: 1.6rem;
+    padding: .75rem;
+}
+.card-text{
+    font-size: 1.1rem;
+}
+.card-body-a{
+    padding: 1rem;
+}
+.card-body-a a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #2ea44f;
+}
+
+@media (max-width: 800px) {
+    .projects-heading{
+        font-size: 2rem;
+    }
+    .projects-heading{
+        font-size: 3rem;
+    }
+    .Project-card{
+        margin: 1rem;
+        padding: 1rem;
+        width: 20rem;
+        height: 20rem;
+    }
+    .card-img-top{
+        width: 10rem;
+        height: 8rem;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .card-text{
+        font-size: .75rem;
+    }
+    .card-body-a a{
+        font-size: .7rem;
+    }
+}

@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('background-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4rem;
+}
+
+.profile-picture{
+    width: 28%;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: right;
+    margin-top: 1%;
+    border-radius: 30%;  
+    border-bottom: 5px solid #00FF7F;
+    /* background: #00FF7F;  */
+    /* box-shadow: 0 0 3rem #00FF7F; */
+}
+.landing-page-text
+{
+    margin: 5rem 0 0 0;
+    padding: 1rem;
+    color: #298e46;
+    text-align: center;
+}
+.landing-h3{
+    font-size: 4rem;
+    transition: all 0.5s ease;
+}
+.landing-h1
+{
+    font-size: 5rem;
+}
+.landing-h1-fancy{
+    color: #298e46;;
+    transition: all 0.4s ease;
+    padding-left: 30rem;
+    /* box-shadow: 0 0 2rem #298e46; */
+}
+.landing-h1-fancy:hover{
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.landing-p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    color: #F4F1E6;
+    padding: 1rem;
+    margin-top: 5rem;
+    background:  #333;
+}
+
+
+.landing-p-fancy{
+    color: #00FF7F;   
+}
+
+.resume-btn{
+    font-size: 20px;
+    color: #000;    
+    margin: 2rem;
+    padding: .5rem;
+    border-radius: 10%;
+    border: 2px solid #00FF7F;
+    transition: all .4s ease-in-out;
+}
+.resume-btn:hover{
+    border: none;
+    box-shadow:none;
+    transform: scale(1.2);
+}
+.resume-btn a{
+    color: #298e46;
+}
+
+@media (max-width:1400px) {
+    .landing-h1-fancy{
+        padding-left: 10rem;
+    }
+}
+@media (max-width:800px) {
+    .profile-picture{
+        width: 50%;
+        float: none;
+        margin-top: 2%;
+        margin-left: 25%;
+        border-radius: 50%;
+    }
+    .landing-page-text
+    {
+        margin-top: 1rem;
+    }
+    .landing-h3{
+        font-size: 1.5rem;
+    }
+    .landing-h1
+    {
+        font-size: 2.1rem;
+    }
+    .landing-h1-fancy{
+        padding-left: 0rem;
+    }
+    .landing-h1 span{
+        color: #00FF7F;
+    }
+    .landing-h1 span:hover{
+        cursor: pointer;
+    }
+    .landing-p{
+        font-size: 1rem;
+        font-weight: lighter;
+        margin-top: 1rem;
+    }
+    .resume-btn{
+        font-size: 12px;
+    }
+}
